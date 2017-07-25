@@ -1,4 +1,4 @@
-package com.example.mobliesafe.chapter01;
+package com.example.mobliesafe.chapter01.ui;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.example.mobliesafe">
-    <!--访问网络-->
-<uses-permission android:name="android.permission.INTERNET"/>
-    <!--写sd卡-->
+
+    <!-- 访问网络 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- 写sd卡 -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -13,14 +15,29 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.FullScreen">
         <activity android:name=".MainActivity">
-
         </activity>
-        <activity android:name=".chapter01.SplashActivity">
+        <activity android:name=".chapter01.ui.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+        </activity>
+        <activity android:name=".chapter01.ui.SecurityPhoneActivity">
+        </activity>
+        <activity android:name=".chapter01.ui.AppManagerActivity">
+        </activity>
+        <activity android:name=".chapter01.ui.VirusScanActivity">
+        </activity>
+        <activity android:name=".chapter01.ui.CacheClearListActivity">
+        </activity>
+        <activity android:name=".chapter01.ui.ProcessManagerActivity">
+        </activity>
+        <activity android:name=".chapter01.ui.TrafficMonitoringActivity">
+        </activity>
+        <activity android:name=".chapter01.ui.AdvancedToolsActivity">
+        </activity>
+        <activity android:name=".chapter01.ui.SettingsActivity">
         </activity>
     </application>
 
