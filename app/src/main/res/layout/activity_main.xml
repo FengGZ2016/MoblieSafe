@@ -1,19 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@mipmap/bg_home"
     tools:context="com.example.mobliesafe.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+  <LinearLayout
+      android:id="@+id/linear_layout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:gravity="center"
+      android:orientation="horizontal"
+      >
+  <ImageView
+    android:layout_width="100dp"
+    android:layout_height="107.5dp"
+    android:background="@drawable/superman"
+    />
 
-</RelativeLayout>
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/textview_ad"
+      android:gravity="center"
+      android:paddingTop="30dp"
+      android:text="主人，我是你的手机护卫"
+      android:textColor="#90000000"
+      android:textScaleX="1.1"
+      android:textSize="16sp"
+      android:typeface="normal"
+      />
+    <!--  android:typeface="normal"常规的字体属性 -->
+    
+  </LinearLayout>
+  
+  
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      >
+
+    <!--网格布局-->
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gridview_home"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:cacheColorHint="#00000000"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:numColumns="3"
+        android:verticalSpacing="10dp"
+
+        >
+      <!--android:cacheColorHint="#00000000" 拖动的背景颜色-->
+
+
+    </GridView>
+
+
+  </RelativeLayout>
+
+</LinearLayout>
