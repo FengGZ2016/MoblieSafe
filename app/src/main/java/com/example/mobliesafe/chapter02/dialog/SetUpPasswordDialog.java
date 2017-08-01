@@ -79,6 +79,16 @@ public class SetUpPasswordDialog extends Dialog{
 
     }
 
+    public String getFirstPassword(){
+        String firstPassword=mEditText_first_password.getText().toString().trim();
+        return firstPassword;
+    }
+
+    public String getAffirmPassword(){
+        String affirmPassword=mEditText_affirm_password.getText().toString().trim();
+        return affirmPassword;
+    }
+
 
     /**
      * 设置对话框的标题栏

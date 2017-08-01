@@ -73,6 +73,11 @@ public class InterPasswordDialog extends Dialog{
 
     }
 
+    public String getPassword(){
+        String password=mEditText_inter_password.getText().toString().trim();
+        return password;
+    }
+
     /***
      * 设置对话框标题
      * @param title

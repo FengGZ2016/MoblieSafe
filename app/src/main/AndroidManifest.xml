@@ -39,6 +39,10 @@
         </activity>
         <activity android:name=".chapter01.ui.SettingsActivity">
         </activity>
+        <activity android:name=".chapter02.ui.LostFindActivity">
+        </activity>
+        <activity android:name=".chapter02.ui.SetUp1Activity">
+        </activity>
     </application>
 
 </manifest>
