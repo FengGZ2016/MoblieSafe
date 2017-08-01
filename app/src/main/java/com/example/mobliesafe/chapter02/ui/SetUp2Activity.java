@@ -10,6 +10,6 @@ public class SetUp2Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_set_up1);
+        setContentView(R.layout.activity_set_up2);
     }
 }
